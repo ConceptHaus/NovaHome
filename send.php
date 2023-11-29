@@ -45,7 +45,7 @@
 						
 	if( $_POST['email'] != '' ) 
 	{					
-		if (envia_mail($message_usuario,$to,$subject)) {
+		if (@envia_mail($message_usuario,$to,$subject)) {
 			
 			$subject = utf8_decode('Nova Home - Nuevo Mensaje');
 			
